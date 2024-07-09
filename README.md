@@ -1,7 +1,9 @@
 # CH32V003-tiny-in-line-dev-board
 A tiny CH32V003 32bit RISC-V prototype development board in an unusual form factor - 8 pins single in-line.
 A CH32V003J4M6 SOP-8 IC is used. It has 6 IO pins one of which is used for flashing the ROM. It runs at 24MHz max with no crystal.
-![CH32V003-dev-board-SIL8-front-](https://github.com/alunmorris/CH32V003-tiny-in-line-dev-board/assets/4630866/1d263515-e0fd-4fe5-92dd-b592708f6eec)
+![CH32V003-dev-board-SIL8-front-300x250-](https://github.com/alunmorris/CH32V003-tiny-in-line-dev-board/assets/4630866/c2b6819b-519c-4b03-8c60-0affc5fb05ed)
+![CH32V003-dev-board-SIL8-back-300x250](https://github.com/alunmorris/CH32V003-tiny-in-line-dev-board/assets/4630866/2ac84c71-436c-40ab-b0a8-dd1cfc0af197)
+![CH32V003-dev-board-SIL8-top-300x200](https://github.com/alunmorris/CH32V003-tiny-in-line-dev-board/assets/4630866/e6b72381-6526-4f45-a96e-5b0269a48633)
 
 I did the project as an exercise in minimalism and aesthetics.
 
