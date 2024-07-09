@@ -1,35 +1,19 @@
 # CH32V003-tiny-in-line-dev-board
-A tiny 
+A tiny CH32V003 32bit RISC-V prototype development board in an unusual form factor - 8 pins single in-line.
+A CH32V003J4M6 SOP-8 IC is used. It has 6 IO pins one of which is used for flashing the ROM. It runs at 24MHz max with no crystal.
+![CH32V003-dev-board-SIL8-front-](https://github.com/alunmorris/CH32V003-tiny-in-line-dev-board/assets/4630866/1d263515-e0fd-4fe5-92dd-b592708f6eec)
 
-
-
-I did the project as an exercise in minimalism as well as being actually useful. Demo at 
+I did the project as an exercise in minimalism and aesthetics.
 
 
 ## Notable design features
-* Size 18x21x11mm
-* Autoranges six levels for optimal accuracy
-* OLED unplugs, allowing the MPU to be programmed via the same header
-
-![multi-channel-voltmeter-5-smaller](https://github.com/alunmorris/Multi-channel-autorange-OLED-voltmeter/assets/4630866/3fbe69d8-d6f0-4e4b-b7f5-889d0f148057)
-
-
-## Function Overview
-The MPU ADC (10-bit) reads voltage data from 4 channels and shows them on an OLED display.
-
-Features:
-* 0-27V range. 1mV resolution for V<1V.
-* 3.3-12V supply. Reverse polarity protection.
-* Accuracy c.1% (can be improved by calibration). May deteriorate - depends on resistor quality.
-* Temperature variation is mostly dependent on the resistors. The MPU ADC is +/-0.1% over 0 to 40C. 
-* Positive voltage only. Over voltage indication. +/-100V input tolerant.
-* 1.1Mohm input impedance (or 1.1Mohm in series with 30pF when V<2.5V).
-* Sample rate c.10/s, configurable
-
-### Circuit diagrams
-In eeschema/Kicad .sch format.
+* Size 20x17x7mm
+* LED on PC4 (pin 7) and push button switch on PA2 (pin3).
+* 5V or 3.3V power.
 
 
 **Construction**
 
-uilt on a 1.27mm pitch prototyping PCB. using SMD components, apart from the two headers. I removed the 4 pin 2.54mm header from a standard 72x40 0.42in OLED module and replaced with a 7 pin 1.27mm male header with pins 2, 3 and 5 removed so that it goes through the same holes.
+Built on a 1.27mm pitch prototyping PCB. using SMD components, apart from the header. An 8x1 turned-pin male header carries all the IC pins. There's no separate programming header. Just plug it into a standard 0.1in pitch breadboard and connect pins 2, 4 and 8 to a WCH-LinkE (or other) programmer.
+The push switch is 4.5x3mm. I tried a 2x3mm switch but it was too tricky to press.
+
