@@ -22,12 +22,23 @@ Built on a 1.27mm pitch prototyping PCB. using SMD components, apart from the he
 The push switch is 4.5x3mm. I tried a 2x3mm switch but it was too tricky to press.
 
 ## Programming
-I used both Arduino and the CH32V003fun environment in PlatforIO (in Visual Studio). 
+I used both Arduino and the CH32V003fun environment in PlatformIO (in Visual Studio). 
 
 **Arduino**
-This was straighforward using the WCH official CH32V Boards Manager (https://github.com/openwch/board_manager_files/raw/main/package_ch32v_index.json ). However the Arduino Blink sketch. Uses 10368 bytes, laeving only ~6KB unused.
+This was straighforward using the WCH official CH32V Boards Manager (https://github.com/openwch/board_manager_files/raw/main/package_ch32v_index.json ). However the Arduino Blink sketch uses a crazy 10368 bytes, leaving only ~6KB unused.
 
 **PlatformIO / CH32V003fun**
 I fond this much more difficult to get working. I hadn't used PlatformIO for a while, and then only with imported Arduino sketches. 
-https://github.com/cnlohr/ch32v003fun promised small code size. Blink is only xxx
+https://github.com/cnlohr/ch32v003fun promised small code size. Blink is only 512B.
+I could not get code to compile until I realised that I needed to set the top level ch32v003fun as the project folder then edit the platformio.ini file there to specify which example to build. To build one of the examples this involves deleting all the [env:xxxx] sections apart for the one I wanted eg blink:
+_[env:blink]
+extends = fun_base_003
+build_src_filter = ${fun_base.build_src_filter} +<examples/blink>_
 
+Also to build for the SOP-8 MCU instaed of the TSSOP-20 default:
+_[fun_base_003]
+extends = fun_base
+; or genericCH32V003A4M6 or whatever, see platform link
+board = genericch32v003j4m6_
+
+Even though the code compiled there was still an error shown under PROBLEMS (cannot open source file "funconfig.h") but that turned out to be a supurious Intellisense thing. The latest ch32v003fun fixes this.
