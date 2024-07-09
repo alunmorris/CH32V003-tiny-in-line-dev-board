@@ -17,6 +17,7 @@ I did the project as an exercise in minimalism and aesthetics - and yes, the sol
 **Construction**
 
 Built on a 1.27mm pitch prototyping PCB. using SMD components, apart from the header. An 8x1 turned-pin male header carries all the IC pins. There's no separate flashing header. Just plug it into a standard 0.1in pitch breadboard and connect pins 2, 4 and 8 to a WCH-LinkE (or other) flasher.
+
 ![CH32V003-dev-board-SIL8-flashing-300x370](https://github.com/alunmorris/CH32V003-tiny-in-line-dev-board/assets/4630866/e9b46861-a6f1-4e76-8ba2-29351a3c48b2)
 
 The push switch is 4.5x3mm. I tried a 2x3mm switch but it was too tricky to press.
@@ -41,4 +42,4 @@ extends = fun_base
 ; or genericCH32V003A4M6 or whatever, see platform link
 board = genericch32v003j4m6_
 
-Even though the code compiled there was still an error shown under PROBLEMS (cannot open source file "funconfig.h") but that turned out to be a supurious Intellisense thing. The latest ch32v003fun fixes this.
+Even though the code compiled there was still an error shown under PROBLEMS (cannot open source file "funconfig.h") but that turned out to be a supurious Intellisense thing. The latest ch32v003fun download fixes this.
