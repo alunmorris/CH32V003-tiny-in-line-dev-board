@@ -22,6 +22,8 @@ Built on a 1.27mm pitch prototyping PCB. using SMD components, apart from the he
 
 The push switch is 4.5x3mm. I tried a 2x3mm switch but it was too tricky to press.
 
+https://www.youtube.com/watch?v=rPzlua1Xw1I
+
 ## Programming
 I used both Arduino and the CH32V003fun environment in PlatformIO (in Visual Studio). 
 
