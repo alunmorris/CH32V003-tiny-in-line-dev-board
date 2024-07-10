@@ -43,4 +43,4 @@ extends = fun_base
 ; or genericCH32V003A4M6 or whatever, see platform link
 board = genericch32v003j4m6_
 
-Even though the code compiled there was still an error shown under PROBLEMS (_cannot open source file "funconfig.h"_) but that turned out to be a supurious Intellisense thing. The latest ch32v003fun download fixes this.
+Even though the code compiled there was still an error shown under PROBLEMS (_cannot open source file "funconfig.h"_) but that turned out to be a spurious Intellisense thing. The latest ch32v003fun download fixes this.
