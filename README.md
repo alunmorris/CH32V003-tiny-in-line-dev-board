@@ -21,8 +21,7 @@ Built on a 1.27mm pitch prototyping PCB. using SMD components, apart from the he
 ![CH32V003-dev-board-SIL8-flashing-300x370](https://github.com/alunmorris/CH32V003-tiny-in-line-dev-board/assets/4630866/e9b46861-a6f1-4e76-8ba2-29351a3c48b2)
 
 The push switch is 4.5x3mm. I tried a 2x3mm switch but it was too tricky to press.
-
-https://www.youtube.com/watch?v=rPzlua1Xw1I
+Demo at https://www.youtube.com/watch?v=rPzlua1Xw1I
 
 ## Programming
 I used both Arduino and the CH32V003fun environment in PlatformIO (in Visual Studio). 
