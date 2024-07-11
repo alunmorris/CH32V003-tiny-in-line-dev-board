@@ -23,7 +23,7 @@ Built on a 1.27mm pitch prototyping PCB. using SMD components, apart from the he
 The push switch is 4.5x3mm. I tried a 2x3mm switch but it was too tricky to press.
 Demo at https://www.youtube.com/watch?v=rPzlua1Xw1I
 
-## Programming
+## C Programming
 I used both Arduino and the CH32V003fun environment in PlatformIO (in Visual Studio). 
 
 **Arduino**
@@ -44,3 +44,7 @@ extends = fun_base
 board = genericch32v003j4m6_
 
 Even though the code compiled there was still an error shown under PROBLEMS (_cannot open source file "funconfig.h"_) but that turned out to be a spurious Intellisense thing. The latest ch32v003fun download fixes this.
+
+**Unbricking the CH32V003**
+If you use pin 8 (PD1) as an IO pin you won't be able to re-flash it without using the WCH-LinkUtility
+Run WCH-LinkUtility. Use manu Target->Clear All Code Flash By Power off. The CH32V003 must be powered from WCH-LinkE.
