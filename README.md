@@ -45,6 +45,8 @@ board = genericch32v003j4m6_
 
 Even though the code compiled there was still an error shown under PROBLEMS (_cannot open source file "funconfig.h"_) but that turned out to be a spurious Intellisense thing. The latest ch32v003fun download fixes this.
 
+A new issue has been opened in CH32V003fun _Share the detailed steps to use ch32v003fun under vscode/platformio_ https://github.com/cnlohr/ch32v003fun/issues/339 
+
 **Unbricking the CH32V003**
 If you use pin 8 (PD1) as an IO pin you won't be able to re-flash it without using the WCH-LinkUtility
 Run WCH-LinkUtility. Use manu Target->Clear All Code Flash By Power off. The CH32V003 must be powered from WCH-LinkE.
