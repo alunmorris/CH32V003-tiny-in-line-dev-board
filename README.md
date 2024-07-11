@@ -33,7 +33,7 @@ This was straighforward using the WCH official CH32V Boards Manager (https://git
 **PlatformIO / CH32V003fun**
 I found this much more difficult to get working. I hadn't used PlatformIO for a while, and then only with imported Arduino sketches. 
 https://github.com/cnlohr/ch32v003fun promised small code size. Blink is only 512B.
-I could not get code to compile until I realised that I needed to set the top level ch32v003fun as the project folder then edit the platformio.ini file there to specify which example to build. To build just _one_ of the examples, click the tiny folder icon at the bottom of PlatformIO (Switch PlatformIO Project Environment) and choose the project to build.
+I could not get code to compile until I realised that I needed to set the top level ch32v003fun as the project folder. To build just _one_ of the examples, click the tiny folder icon at the bottom of PlatformIO (Switch PlatformIO Project Environment) and choose the project to build.
 
 Even though the code compiled there was still an error shown under PROBLEMS (_cannot open source file "funconfig.h"_) but that turned out to be a spurious Intellisense thing. The latest ch32v003fun download fixes this.
 
