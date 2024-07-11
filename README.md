@@ -6,7 +6,7 @@ A CH32V003J4M6 SOP-8 IC is used. It has 6 IO pins one of which is used for flash
 ![CH32V003-dev-board-SIL8-back-300x250](https://github.com/alunmorris/CH32V003-tiny-in-line-dev-board/assets/4630866/2ac84c71-436c-40ab-b0a8-dd1cfc0af197)
 ![CH32V003-dev-board-SIL8-top-300x200](https://github.com/alunmorris/CH32V003-tiny-in-line-dev-board/assets/4630866/e6b72381-6526-4f45-a96e-5b0269a48633)
 
-I did the project as an exercise in minimalism and aesthetics - and yes, the soldering could be neater.
+I did the project as an exercise in minimalism.
 
 
 ## Notable design features
@@ -16,7 +16,7 @@ I did the project as an exercise in minimalism and aesthetics - and yes, the sol
 
 **Construction**
 
-Built on a 1.27mm pitch prototyping PCB. using SMD components, apart from the header. An 8x1 turned-pin male header carries all the IC pins. There's no separate flashing header. Just plug it into a standard 0.1in pitch breadboard and connect pins 2, 4 and 8 to a WCH-LinkE (or other) flasher.
+Built on a 1.27mm pitch prototyping PCB. using SMD components, apart from the header. An 8x1 turned-pin male header carries all the IC pins. There's no separate flashing header. Just plug it into a standard 0.1in pitch breadboard and connect pins 2, 4 and 8 to a WCH-LinkE USB dongle.
 
 ![CH32V003-dev-board-SIL8-flashing-300x370](https://github.com/alunmorris/CH32V003-tiny-in-line-dev-board/assets/4630866/e9b46861-a6f1-4e76-8ba2-29351a3c48b2)
 
