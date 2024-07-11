@@ -22,9 +22,10 @@ Built on a 1.27mm pitch prototyping PCB. using SMD components, apart from the he
 
 The push switch is 4.5x3mm. I tried a 2x3mm switch but it was too tricky to press.
 Demo at https://www.youtube.com/watch?v=rPzlua1Xw1I
+Demo code at https://github.com/alunmorris/Fast-primes-CH32V003-OLED-display
 
 ## C Programming
-I used both Arduino and the CH32V003fun environment in PlatformIO (in Visual Studio). 
+I used both Arduino and the CH32V003fun environment in PlatformIO (in Visual Studio). Demo code at https://github.com/alunmorris/Fast-primes-CH32V003-OLED-display/tree/main
 
 **Arduino**
 This was straighforward using the WCH official CH32V Boards Manager (https://github.com/openwch/board_manager_files/raw/main/package_ch32v_index.json ). However the Arduino Blink sketch uses a crazy 10368 bytes, leaving only ~6KB unused.
