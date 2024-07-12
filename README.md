@@ -35,9 +35,7 @@ I found this much more difficult to get working. I hadn't used PlatformIO for a 
 https://github.com/cnlohr/ch32v003fun promised small code size. Blink is only 512B.
 I could not get code to compile until I realised that I needed to set the top level ch32v003fun as the project folder. To build just _one_ of the examples, click the tiny folder icon at the bottom of PlatformIO (Switch PlatformIO Project Environment) and choose the project to build.
 
-Even though the code compiled there was still an error shown under PROBLEMS (_cannot open source file "funconfig.h"_) but that turned out to be a spurious Intellisense thing. The latest ch32v003fun download fixes this.
-
-A new issue has been opened in CH32V003fun _Share the detailed steps to use ch32v003fun under vscode/platformio_ https://github.com/cnlohr/ch32v003fun/issues/339 
+It looks like we will get a detailed guide for newbies to using CH32V003fun with PlatformIO: _Share the detailed steps to use ch32v003fun under vscode/platformio_ https://github.com/cnlohr/ch32v003fun/issues/339 
 
 **Unbricking the CH32V003**
 If you use pin 8 (PD1) as an IO pin you won't be able to re-flash it without using the WCH-LinkUtility
